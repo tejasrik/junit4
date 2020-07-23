@@ -5,11 +5,11 @@ env:
     LOGIN: prod/sonar2:sonartoken
     HOST: prod/sonar2:HOST
     Organization: prod/sonar2:Organization
-    Project:prod/sonar2:Project
+    Project: prod/sonar2:Project
 phases:
   install:
     runtime-versions:
-      java: openjdk8
+      java: corretto8
   pre_build:
     commands:
       - apt-get update
